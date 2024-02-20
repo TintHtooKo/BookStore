@@ -1,0 +1,35 @@
+.image img{
+    cursor: pointer;
+    width: 320px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+.image img:hover{
+    transform: scale(1.03);
+}
+
+.imgPosition{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+@media (max-width:992px){
+    .image img{
+        width: 290px;
+        height: 420px;
+    }
+
+    .imgPosition{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:576px) {
+    .imgPosition{
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+}
